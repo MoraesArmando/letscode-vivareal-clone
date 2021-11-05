@@ -1,156 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Comprar Imóveis - Oferta de imóveis à venda - Viva Real</title>
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title> Comprar Imóveis - Oferta de imóveis à venda - Viva Real </title>
   </head>
   <body>
-    <header>
-      <nav class="main-header">
-          <ul>
-            <li>
-              <a id="logo" href="#"> <img src="logo.png" /> </a>
-            </li>
-            <li><a class="itemNav" href="#"> COMPRAR </a></li>
-            <li><a class="itemNav" href="#"> ALUGAR </a></li>
-            <li><a class="itemNav" href="#"> IMÓVEIS NOVOS </a></li>
-            <li><a class="itemNav" href="#"> SELEÇÃO VIVA REAL </a></li>
-            <li><a class="itemNav" href="#"> DESCOBRIR </a></li>
-            <li><a class="itemNav" href="#"> FINANCIAMENTO </a></li>
-          </ul>
-          <ul>
-            <li><a class="itemNav" href="#"> ANUNCIAR IMÓVEIS </a></li>
-            <li><a class="itemNav" href="#"> ENTRAR </a></li>
+    <header id="siteHeader">
+      <!-- MAIN HEADER -->
+      <nav id="navMainHeader">
+        <div class="headerContainer">
+          <div class="imgLogo">
+            <a href="">
+              <img
+                src="img/vivareal-logo.svg"
+                alt=" Viva Real - Conecta você ao imóvel de seus sonhos"
+              />
+            </a>
+          </div>
+          <ul class="headerList">
+            <li><a class="headerLinks" href=""> COMPRAR </a></li>
+            <li><a class="headerLinks" href=""> ALUGAR </a></li>
+            <li><a class="headerLinks" href=""> IMÓVEIS NOVOS </a></li>
+            <li><a class="headerLinks" href=""> BEST FRIDAY </a></li>
+            <li><a class="headerLinks" href=""> DESCOBRIR </a></li>
+            <li><a class="headerLinks" href=""> FINANCIAMENTO </a></li>
           </ul>
         </div>
-    </header>
-
-    <main>
-      <section>
-        <aside class="left-side">
-          <form class="container-form1">
-            <div class="container-locate , formField">
-              <label> LOCALIZAÇÃO DO IMÓVEL </label>
-              <input
-                class="input-locate"
-                placeholder="Digite uma rua, bairro ou cidade"
+        <div class="headerContainer">
+          <ul class="headerList">
+            <li><a class="headerLinks" href="">ANUNCIAR IMÓVEIS</a></li>
+            <li><a class="headerLinks" href="">ENTRAR</a></li>
+          </ul>
+        </div>
+        <!-- HEADER BELOW W-1120PX -->
+        <div id="siteHeaderAlternative">
+          <div>
+            <button id="headerMenuButton">MENU</button>
+          </div>
+          <div>
+            <a href="#">
+              <img
+                src="img/vivareal-logo.svg"
+                alt=" Viva Real - Conecta você ao imóvel de seus sonhos"
               />
-            </div>
-
-            <div class="container-checkbox , formField">
-              <p>IMÓVEL COM</p>
-              <div>
-                <input
-                  type="checkbox"
-                  class="on-off-checkbox"
-                  id="container-checkbox"
-                />
-                <label for="container-checkbox" class="on-off-button"> </label>
-                <span> Tour Virtual ou Vídeos </span>
-              </div>
-            </div>
-
-            <div class="container-type , formField">
-              <label> TIPO DE IMÓVEIS </label>
-              <select required disabled>
-                <option value="" disabled selected hidden>Mostrar todos</option>
-              </select>
-            </div>
-            <div class="container-value , formField">
-              <div>
-                <label id="minimum-value"> PREÇO MÍNIMO </label>
-                <div>
-                  <input
-                    class="input-value"
-                    placeholder="R$                        "
-                  />
-                </div>
-              </div>
-              <div>
-                <label id="maximum-value"> PREÇO MÁXIMO </label>
-                <input
-                  class="input-value"
-                  placeholder="R$          ilimitado"
-                />
-              </div>
-            </div>
-            <div class="container-button">
-              <label> NÚMERO DE QUARTOS </label>
-              <ul>
-                <li><button>1+</button></li>
-                <li><button>2+</button></li>
-                <li><button>3+</button></li>
-                <li><button>4+</button></li>
-                <li><button>5+</button></li>
-              </ul>
-            </div>
-          </form>
-
-          <form class="container-form2">
-            <div class="container-value , formField">
-              <div>
-                <label id="minimum-value"> ÁREA MÍNIMA </label>
-                <input class="input-value" placeholder="m&sup2" />
-              </div>
-              <div>
-                <label id="maximum-value"> PREÇO MÁXIMO </label>
-                <input class="input-value" placeholder="ilimitado m&sup2" />
-              </div>
-            </div>
-
-            <div class="container-button , formField">
-              <label> NÚMERO DE VAGAS NA GARAGEM </label>
-              <ul>
-                <li><button>1+</button></li>
-                <li><button>2+</button></li>
-                <li><button>3+</button></li>
-                <li><button>4+</button></li>
-                <li><button>5+</button></li>
-              </ul>
-            </div>
-
-            <div class="container-button ">
-              <label> NÚMERO DE BANHEIROS </label>
-              <ul>
-                <li><button>1+</button></li>
-                <li><button>2+</button></li>
-                <li><button>3+</button></li>
-                <li><button>4+</button></li>
-                <li><button>5+</button></li>
-              </ul>
-            </div>
-          </form>
-        </aside>
-
-        <div class="right-side">
-          <div class="nav-right-side">
-            <ul>
-              <li class="blue-underline">
-                <a class="right-icon" href="#"> COMPRAR </a>
-              </li>
-              <li>
-                <a class="right-icon" href="#"> ALUGAR </a>
-              </li>
-              <li>
-                <a class="right-icon" href="#"> IMÓVEIS NOVOS </a>
-              </li>
-              <li>
-                <a class="right-icon" href="#"> SELEÇÃO VIVA REAL </a>
-              </li>
-            </ul>
+            </a>
+          </div>
+          <div>
+            <a class="headerLinks" href="">ANUNCIAR</a>
           </div>
         </div>
-      </section>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <div id="sellMensage">
+        <p>Viva Real &middot Venda <span></span></p>
+      </div>
+      <div id="mainContainer">
+        <aside id="asideForm">
+          <div id="asideTop">
+            <!-- PROPERTY LOCATION -->
+            <div class="formField">
+              <div class="formLabel">
+                <label for="property-location">LOCALIZAÇÃO DO IMÓVEL</label>
+              </div>
+              <div class="formInputText">
+                <input
+                  type="text"
+                  name=" property-location"
+                  id="property-location"
+                  placeholder="Digite uma rua, bairro ou cidade"
+                />
+              </div>
+            </div>
+
+            <div class="formField">
+              <div class="formLabel">
+                <label for="">IMÓVEL COM</label>
+              </div>
+              <div class="containerCheckbox">
+                <label class="switch">
+                  <div class="switchWrapper">
+                    <input type="checkbox" name="" id="" />
+                    <span class="switchButton"></span>
+                  </div>
+                  <span class="switchText"> Tour Virtual ou Vídeos </span>
+                </label>
+              </div>
+            </div>
+            <div class="formField">
+              <div class="formLabel">
+                <label for="">TIPO DE IMÓVEL</label>
+              </div>
+              <div class="formInputText" id="componentDisable">
+                <select name="" id="" disabled>
+                  <option value="opel">Mostrar todos</option>
+                </select>
+              </div>
+            </div>
+            <div class="formField, formTowInput">
+              <div>
+                <div class="formLabel">
+                  <label for="">PREÇO MÍNIMO</label>
+                </div>
+                <div class="formInputText">
+                  <input class="moneyImage" type="number" name="" id="" />
+                </div>
+              </div>
+              <div class="formHr"></div>
+              <div>
+                <div class="formLabel">
+                  <label for="">PREÇO MÁXIMO</label>
+                </div>
+                <div class="formInputText">
+                  <input class="moneyImage" type="number" name="" id="" />
+                </div>
+              </div>
+            </div>
+            <div class="formLastField">
+              <div class="formLabel">
+                <label for="">NÚMERO DE QUARTOS</label>
+              </div>
+              <ul class="formAsideList">
+                <li><button class="formButton">1+</button></li>
+                <li><button class="formButton">2+</button></li>
+                <li><button class="formButton">3+</button></li>
+                <li><button class="formButton">4+</button></li>
+                <li><button class="formButton">5+</button></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="asideBotton">
+            <div class="formField, formTowInput">
+              <div>
+                <div class="formLabel">
+                  <label for="">ÁREA MÍNIMA</label>
+                </div>
+                <div class="formInputText">
+                  <input class="areaImage" type="number" name="" id="" />
+                </div>
+              </div>
+              <div class="formHr"></div>
+              <div>
+                <div class="formLabel">
+                  <label for="">ÁREA MÁXIMA</label>
+                </div>
+                <div class="formInputText">
+                  <input class="areaImage" type="number" name="" id="" />
+                </div>
+              </div>
+            </div>
+            <div class="formField">
+              <div class="formLabel">
+                <label for="">NÚMERO DE VAGAS NA GARAGEM</label>
+              </div>
+              <ul class="formAsideList">
+                <li><button class="formButton">1+</button></li>
+                <li><button class="formButton">2+</button></li>
+                <li><button class="formButton">3+</button></li>
+                <li><button class="formButton">4+</button></li>
+                <li><button class="formButton">5+</button></li>
+              </ul>
+            </div>
+            <div class="formField">
+              <div class="formLabel">
+                <label for="">NÚMERO DE BANHEIROS</label>
+              </div>
+              <ul class="formAsideList">
+                <li><button class="formButton">1+</button></li>
+                <li><button class="formButton">2+</button></li>
+                <li><button class="formButton">3+</button></li>
+                <li><button class="formButton">4+</button></li>
+                <li><button class="formButton">5+</button></li>
+              </ul>
+            </div>
+            <div class="formField">
+              <div class="formLabel">
+                <label for="">LAZER E ESPORTE</label>
+              </div>
+              <input type="checkbox" name="" id="" />
+              <label for="">opção 1</label>
+              <input type="checkbox" name="" id="" />
+              <label for="">opção 2</label>
+            </div>
+          </div>
+        </aside>
+
+        <!-- editando -->
+        <section id="resultMain">
+          <header id="resultHeaderSummary">
+            <nav id="resultSummaryTabs">
+              <ul id="tabMenu">
+                <li>
+                  <a
+                    class="resultHeaderLinks"
+                    id="resultHeaderLinksSelect"
+                    href=""
+                  >
+                    COMPRAR
+                  </a>
+                </li>
+                <li>
+                  <a class="resultHeaderLinks" href=""> ALUGAR </a>
+                </li>
+                <li>
+                  <a class="resultHeaderLinks" href=""> IMÓVEIS NOVOS </a>
+                </li>
+                <li><a class="resultHeaderLinks" href=""> BEST FRIDAY </a></li>
+              </ul>
+            </nav>
+            <div id="resultSummaryContainer"></div>
+          </header>
+          <div class="cardsContainer"></div>
+        </section>
+      </div>
     </main>
-    <script src="js/main.js" type="module"></script>
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>
